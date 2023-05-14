@@ -7,22 +7,22 @@ int main()
     const int mLength = 10; //размерность массива
     int mass[mLength];      //массив
 
-    std::cout << "Элементов массива: " << mLength << "\n";
+    std::cout << "Элементов массива: " << mLength << "\n";          //вывод на экран сообщения
     std::cout << "Введите целые числа массива для сортировки:\n";   //вывод на экран сообщения
-    for (int i = 0; i < mLength; i++)
+    for (int i = 0; i < mLength; i++)   //цикл для ввода элементов массива
     {
         std::cout << "Элемент " << i + 1 << ": ";
         std::cin >> mass[i];    //ввод элементов массива с клавиатуры
     }
 
-    //введенный массив
+    //вывод введенного массива
     std::cout << "Введенный массив: ";
     for (int i = 0; i < mLength; i++) std::cout << mass[i] << " ";
     std::cout << "\n";
 
     const double factor = 1.247; // Фактор уменьшения
-    int step = mLength - 1;
-    int temp;
+    int step = mLength - 1;      //шаг сортировки
+    int temp;                    //временная переменная
 
     //сортировка расчёской
     while (step >= 1) {
@@ -46,7 +46,7 @@ int main()
         }
     }
 
-    //отсортированный массив
+    //вывод отсортированного массива
     std::cout << "Отсортированный массив: ";
     for (int i = 0; i < mLength; i++) std::cout << mass[i] << " ";
     std::cout << "\n";
