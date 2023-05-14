@@ -45,4 +45,9 @@ int main()
             }
         }
     }
+
+    //отсортированный массив
+    std::cout << "Отсортированный массив: ";
+    for (int i = 0; i < mLength; i++) std::cout << mass[i] << " ";
+    std::cout << "\n";
 }
